@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Video Calling</title>
+        <link rel="stylesheet" href="HW3.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="flexContainer">
+            <div class="left-pane">
+                <div class="logoSmall">
+                    <img class="logoElement" src="agoraLogo.png"/>
+                </div>
+                <span class="headingText">
+                    Join A Chat!
+                </span>
+                <input type="text" id="username" placeholder="Username" value="JohnDoe123">
+                <input type="text" id="channelName" placeholder="ChannelName" value="ChannelName">
+                <button class="submitButton" id="join">Join</button>
+                <br/>
+                <div id="participantsBox">
+                    <span class="headingText">Participants</span>
+                    <br/>
+                    <div id="newpptBox">
+
+                    </div>
+                </div>
+                
+
+
+
+            </div>
+            <div class="right-container">
+            <div class="right-pane">
+                <div id="SelfStream">
+                </div>
+                <div id="pptStreams">
+                    
+                </div>
+                
+            </div>
+        </div>
+        </div>
+        <script src="https://cdn.agora.io/sdk/release/AgoraRTCSDK-3.0.0.js"></script>
+        <script src="HW3agoraRTC.js"></script>
+    </body>
+</html>
